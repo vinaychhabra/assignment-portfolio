@@ -5,29 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinay Chhabra</title>
     <link href="style.css" rel="stylesheet" />
+    <script src="foundation.js"></script>
 </head>
 <body>
     <header>
         <div class="header-container">
             <div class="left-container"><h2>&lt;Vinay Chhabra/&gt;</h2></div>
             <div class="right-container">
+                <label class="hamburger-menu" for="toggle-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <input type="checkbox" id="toggle-menu">
                 <div class="header-categories">
                     <ul class="header-categories-list">
                         <li class="cursor-pointer category-home"><a href="#hero-section">Home</a></li>
                         <li class="cursor-pointer category-about"><a href="#about-section">About</a></li>
-                        <li class="cursor-pointer category-project">Projects</li>
-                        <li class="cursor-pointer category-services">Services</li>
-                        <li class="cursor-pointer category-contact">Contact</li>
+                        <li class="cursor-pointer category-project"><a>Projects</a></li>
+                        <li class="cursor-pointer category-services"><a>Services</a></li>
+                        <li class="cursor-pointer category-contact"><a>Contact</a></li>
                     </ul>
                 </div>
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
             </div>
-
         </div>        
     </header>
+    
     <section class="hero-section" id="hero-section">
         <div class="hero-container">
             <div class="left-hero-container">
