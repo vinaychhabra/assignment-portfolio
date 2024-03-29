@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinay Chhabra</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="foundation.js"></script>
+    <script src="dynamicProjects.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="left-container">
+                <h2>&lt;Vinay Chhabra/&gt;</h2>
+            </div>
+            <div class="right-container">
+                <label class="hamburger-menu" for="toggle-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <input type="checkbox" id="toggle-menu">
+                <div class="header-categories">
+                    <ul class="header-categories-list">
+                        <li class="cursor-pointer category-home" data-target="#hero-section"><a href="#hero-section">Home</a></li>
+                        <li class="cursor-pointer category-about" data-target="#about-section"><a href="#about-section">About</a></li>
+                        <li class="cursor-pointer category-project" data-target="#projects-section"><a href="#projects-section">Projects</a></li>
+                        <li class="cursor-pointer category-services" data-target="#services-section"><a href="#services-section">Services</a></li>
+                        <li class="cursor-pointer category-contact" data-target="#contact-section"><a href="#contact-section">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>        
+    </header>
+    
+    <section class="hero-section" id="hero-section">
+        <div class="hero-container">
+            <div class="left-hero-container">
+                <div class="main-left">
+                    <h1>Hello,</h1>
+                    <h1>I'm Vinay Chhabra</h1>
+                    <h1>Full Stack Developer</h1>
+
+                </div>
+            </div>
+            <div class="right-hero-container">
+                <img src="../assets/banner.svg" />
+            </div>
+        </div>
+    </section>
+    <section class="about-section" id="about-section">
+        <div class="about-section-container">
+            <h1 class="about-title">About</h1>
+            <h2 class="about-sub-title">A bit about me</h2>
+            <p class="about-content">
+                I'm a self-taught web developer and Mobile App Developer with experience in designing new features from ideation to production, implementation of wireframes and design flows into high performance software applications. I take into consideration the user experience while writing reusable and efficient code. I passionately combine good design, technology, and innovation in all my projects, which I like to accompany from the first idea to release. Currently, I'm focused on backend development.
+            </p>
+            <h2 class="about-sub-title">Technologies and Tools</h2>
+            <div class="tab-navigation">
+                <a href="#html-tab" class="tab-link active">HTML</a>
+                <a href="#css-tab" class="tab-link">CSS</a>
+                <a href="#js-tab" class="tab-link">JavaScript</a>
+                <a href="#react-tab" class="tab-link">React</a>
+                <a href="#php-tab" class="tab-link">PHP</a>
+                <a href="#java-tab" class="tab-link">Java</a>
+            </div>
+            <div class="tab-content active" id="html-tab">
+                <p class="about-content">HTML (Hypertext Markup Language) is the standard markup language for creating web pages and web applications. I have extensive experience in writing clean, semantic HTML code to structure web content.</p>
+                <p class="about-content">I ensure that my HTML code is accessible, responsive, and optimized for search engines to improve user experience and SEO performance.</p>
+            </div>
+            <div class="tab-content" id="css-tab">
+                <p class="about-content">CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML. I have expertise in CSS to style and layout web pages with beautiful designs and engaging user interfaces.</p>
+                <p class="about-content">I leverage CSS frameworks like Bootstrap and preprocessors like SASS to streamline development and create responsive, mobile-first designs.</p>
+            </div>
+            <div class="tab-content" id="js-tab">
+                <p class="about-content">JavaScript is a versatile programming language used for building interactive and dynamic web applications. I am proficient in JavaScript and its modern frameworks like Angular and Vue.js.</p>
+                <p class="about-content">I utilize JavaScript to implement client-side functionality, enhance user interactivity, and optimize website performance.</p>
+            </div>
+            <div class="tab-content" id="react-tab">
+                <p class="about-content">React is a JavaScript library for building user interfaces. I have hands-on experience in developing web applications with React.js and React Native.</p>
+                <p class="about-content">I use React's component-based architecture to create reusable UI components, manage state efficiently, and build scalable applications.</p>
+            </div>
+            <div class="tab-content" id="php-tab">
+                <p class="about-content">PHP is a server-side scripting language used for web development and creating dynamic web pages. I am skilled in PHP and MySQL for building robust backend systems and database-driven web applications.</p>
+                <p class="about-content">I develop custom PHP solutions, integrate third-party APIs, and implement secure authentication and authorization mechanisms.</p>
+            </div>
+            <div class="tab-content" id="java-tab">
+                <p class="about-content">Java is a popular programming language used for developing a wide range of applications, including Android mobile apps and enterprise solutions. I have expertise in Java development and Android app development.</p>
+                <p class="about-content">I leverage Java's object-oriented principles, libraries, and frameworks to build scalable, high-performance applications that meet business requirements.</p>
+            </div>
+    </section>
+    
+    <section class="projects-section" id="projects-section">
+        <div class="projects-section-container">
+            <h1 class="projects-title">Projects</h1>
+            <div id="projects-container" class="projects-container"></div>
+        </div>
+    </section>
+    
+    <section class="services-section" id="services-section">
+        <div class="services-section-container">
+            <h1 class="services-title">Services</h1>
+            <h2 class="services-sub-title">What I Provide</h2>
+            <div class="services-items">
+                <div class="services-item">
+                    <img src="../assets/services-web.png" />
+                    <h2>Web Application Development</h2>
+                    <p class="services-item-content">Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design user interface design authoring, including standardised code and proprietary software user experience design and search engine</p>
+                </div>
+                <div class="services-item">
+                    <img src="../assets/services-mobile.png" />
+                    <h2>Mobile Application Development</h2>
+                    <p class="services-item-content">We provide a range of mobile application development services including custom mobile development on Android platforms, building cross-platform apps, designing user experience and integrating novel mobile interfaces such as chat and voice</p></div>
+                <div class="services-item">
+                    <img src="../assets/services-web.png" />
+                    <h2>Backend Development
+                    </h2>
+                    <p class="services-item-content">Our backend development services provide robust API development, efficient database management, server-side logic implementation, performance optimization, and stringent security measures, ensuring fast, scalable, and secure web applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Designed and Developed by <a href="www.linkedin.com/in/vinay-chhabra-631665128" target="_blank">Vinay Chhabra</a></p>
+    </footer>
+</body>
+</html>
