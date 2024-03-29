@@ -1,0 +1,18 @@
+Personal Portfolio Building Assignments
+
+Inside this repository, we have 3 folders:
+
+Foundation: Contains index.html, style.css, and foundation.js, which are responsible for the basic structure of the portfolio.
+
+Dynamic_Projects: Includes index.html, style.css, foundation.js, and dynamicProjects.js. These files are responsible for the basic structure of the portfolio and rendering projects dynamically.
+
+Form_Enhancement: Consists of index.html, style.css, foundation.js, dynamicProjects.js, and formEnhancement.js. These files handle the basic structure of the portfolio, project rendering, and contact form validation.
+
+
+To run these projects, navigate to each folder and simply open index.html in your browser. You will be able to see the frontend of each project.
+
+
+Additionally, there is an Assignment_Report.docx file provided alongside these folders. 
+This document contains screenshots and code snippets related to the assignments.
+
+Note: Please ignore the assets folder, as it only contains images used in these projects.
