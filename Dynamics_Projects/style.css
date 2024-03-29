@@ -22,7 +22,7 @@ header {
     position: fixed;
     margin: 1rem;
     width: -webkit-fill-available;
-    z-index:5;
+    z-index: 5;
 }
 
 .left-container {
@@ -30,7 +30,7 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color: #000;
+    color: #0e0e0e;
 }
 
 .right-container {
@@ -48,7 +48,7 @@ header {
     background-color: var(--main-bgDark-color);
     padding: 1rem;
     border-radius: 15px;
-    box-shadow: 24px 24px 47px #bebebe, -24px -24px 47px #ffffff;
+    box-shadow: 4px 4px 27px #dadada, -24px -24px 47px #ffffff;
     align-items: center;
 }
 
@@ -67,9 +67,10 @@ header {
 }
 
 .header-categories-list > li > a {  
-    padding: 0.8rem 1rem;
+    padding: 0.5rem 1rem;
+    margin-right: 5px;
     font-size: larger;
-    color: #000;
+    color: #0e0e0e;
     border-radius: 10px;
 }
 .header-categories-list > li > a:hover {
@@ -365,10 +366,12 @@ footer > p > a {
     }
     .header-categories-list > li {
         background-color: var(--main-button-color);
-        color: #fff;
         width: 100px;
         text-align: center;
         gap: 1rem;;
+    }
+    .header-categories-list > li > a{
+        color: #fff;
     }
 }
 
@@ -394,4 +397,86 @@ footer > p > a {
 @keyframes fadeInOut {
     0%, 100% { opacity: 0; }
     50% { opacity: 1; }
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-item {
+    background-color: #fff;
+    border: #000 solid 1px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color:#3a80f6;
+    font-size: var(--main-subTitle-size);
+}
+
+.project-item p {
+    margin-bottom: 15px;
+    font-size:var(--main-content-size);
+}
+
+.project-item a {
+    color: #3a80f6;
+    text-decoration: none;
+}
+
+.project-item a:hover {
+    text-decoration: underline;
+}
+
+/* Media query for desktop */
+@media screen and (min-width: 768px) {
+    .projects-container {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .project-item {
+        flex: 0 0 auto;
+        width: calc(28% - 10px);
+        margin-right: 20px;
+    }
+
+    .project-item:last-child {
+        margin-right: 0;
+    }
+}
+.tab-navigation {
+    margin-bottom: 20px;
+}
+
+.tab-link {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-right: 10px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+.tab-link.active {
+    border-bottom-color: #3a80f6;
+    BACKGROUND: #FFF;
+    BORDER-RADIUS: 10PX;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
 }
