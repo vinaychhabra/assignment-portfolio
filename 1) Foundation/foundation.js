@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var categories = document.querySelectorAll('.header-categories-list li a');
     categories.forEach(function(category) {
         category.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent default behavior (i.e., jump to anchor)
+            event.preventDefault(); 
             var targetId = category.getAttribute('href');
             var targetElement = document.querySelector(targetId);
             if (window.innerWidth <= 768) {

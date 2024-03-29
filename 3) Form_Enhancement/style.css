@@ -17,10 +17,12 @@ body {
     padding: 0;
     background-color: var(--main-bg-color);
 }
-
+sup{
+    color:red;
+}
 header {
     position: fixed;
-    margin: 1rem;
+    margin: 1rem;   
     width: -webkit-fill-available;
     z-index: 5;
 }

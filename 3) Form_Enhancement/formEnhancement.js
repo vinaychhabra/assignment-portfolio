@@ -11,7 +11,17 @@ document.addEventListener("DOMContentLoaded", function() {
         var email = emailInput.value.trim();
         var message = messageInput.value.trim();
 
-        if (name === '' || email === '' || message === '') {
+        // Validate name field
+        var isValidName = /^[a-zA-Z\s]*$/.test(name);
+        if (!isValidName || name === '') {
+            displayMessage('error', 'Please enter only letters and spaces in the name field');
+            nameInput.style.borderColor = '#FF0000'; // Highlight the field
+            return; // Stop further validation
+        } else {
+            nameInput.style.borderColor = ''; // Remove highlight
+        }
+
+        if (email === '' || message === '') {
             displayMessage('error', 'Please fill in all fields');
             highlightEmptyFields();
             return;
